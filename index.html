@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Travel Blog-Journey begins here</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d92630495d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+  
+  <!--<header id="header">
+    
+    <a href="#" class="logo">Explora</a>
+    
+    <ul>
+        <li><a href="index.html"class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Destination.html">Destination</a></li>
+        <li><a href="Travel Tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About </a></li>  
+        <li><a href="FAQ2.html">FAQ </a></li>
+    </ul>
+    </div>    
+</header>-->
+<nav class="navbar">
+  <div class="navbar-container container">
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <h1 class="logo">EXPLORA</h1>
+      <ul class="menu-items">
+        <li><a href="index.html"class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Destination.html">Destination</a></li>
+        <li><a href="Travel Tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About </a></li>  
+        <li><a href="FAQ2.html">FAQ </a></li>
+      </ul>
+      
+  </div>
+</nav>
+<section class="home">
+    <!--<img src="bg1.jpg" id="hills">-->
+    <a href="map.html"id="btn">Explore >></a>
+    <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</section>
+      <!-- <nav id="navbar">  
+          <div id="logo">
+            <img src="C:\Users\91759\OneDrive\Desktop\web development\blog front end UI\logo1.png" alt="logo">
+        </div>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Destination.html">Destination</a></li>
+            <li><a href="Travel Tips.html">Travel Tips</a></li>
+            <li><a href="about.html">About </a></li>  
+            <li><a href="FAQ.html">FAQ </a></li>
+        </ul> 
+        
+    </nav> 
+    <section id="home">
+        <h1 class="h-primary">TRAVEL. ADVENTURE.<br> MEMORIES.</h1>
+        <p>What's Your Next Destination?</p>
+        <input type="text" class="form-control" placeholder="Search Explora..."><br>
+        <button type=" button" class="block">Learn More</button>
+    </section>-->
+    
+    <section class="travel-container">
+        <h2 class="text-center">HOW CAN WE HELP YOU?</h2>
+        <div id="travel">
+            <div class="box">
+                <img src="ocean1.jpg" alt="ocean1">
+                 <h1> Destination</h1>
+                 <p>Explore Around The World!</p>
+            </div>
+            <div class="box">
+                    <img src="desert1.jpg" alt="">
+                    <h1> Itineraries</h1>
+                    <p>Discover detailed itineraries for multiple destinations!</p>
+            </div>
+            <div class="box">
+                <img src="mountain1.jpg" alt="">
+                <h1> Travel Tips</h1>
+                <p>Learn from the best!</p>
+            </div>
+        </div>
+    </section>
+    <section class="blog-container">
+      <h2 class="text">OUR BEST SHORTS</h2>
+      <div id="blog">
+        <div class="box">
+            <img src="agra.jpeg" alt="agra">
+        </div>
+        <div class="box">
+            <img src="USA.png" alt="USA">  
+        </div>
+        <div class="box">
+            <img src="dubai.jpg" alt="Dubai">
+        </div>
+        <div class="box">
+          <img src="desert2.2.jpg" alt="desert">  
+      </div>
+        <div class="box">
+          <img src="blog14.2.jpg" alt="blog14">  
+      </div>
+        <div class="box">
+          <img src="blog16.2.jpg" alt="blog16">  
+      </div>
+      <div class="box">
+        <img src="north america.2.jpg" alt="north america">  
+    </div>
+      </div>
+    </section>
+    <section class="b-container">
+        <h2>BUCKETLIST EXPERIENCE</h2>
+        <p>Start Your Bucketlist Now!</p>
+    </section>    
+        <div class="row">
+          <div class="column">
+            <img src="road trip.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="safari.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="tropics.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+         </div>
+         <div class="row"> 
+          <div class="column">
+            <img src="hiking.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+           <img src="antartica.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+         </div>
+         <div class="column">
+           <img src="adventure.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+         </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="road trip.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="safari.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="tropics.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="hiking.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="antartica.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="adventure.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="road trip.jpg" style="width:100%" onclick="currentSlide(1)" alt="Road trip: Plan your next trip with Us!">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="safari.jpg" style="width:100%" onclick="currentSlide(2)" alt="Safari: Let's rumble in the jungle. Life is a safari, let's conquer it together.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="tropics.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tropics: Do we look like a tropical paradise to you?">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="hiking.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hiking: To Walk In Nature Is To Witness a Thousand Miracles!">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="antartica.jpg" style="width:100%" onclick="currentSlide(5)" alt="Antarctica: Research and Discovery! ">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="adventure.jpg" style="width:100%" onclick="currentSlide(5)" alt="Adeventure: Adventure is out there.Go & Find it!">
+              </div>
+          </div>
+        </div>
+    <section id="about">
+        <!--<h1 class="title">FIND YOUR <br> ADVENTURE WITH US   </h1>
+        <p>We’re here to help you prepare and save for travel,<br> and teach you ways to work remotely so you can travel<br> indefinitely.</p>
+        <button type=" button" class="btn-sm">Subscribe</button>-->
+      <h1 class="title">ABOUT ME</h1>  
+      <div class="column_con">
+        <div class="column_left">
+          <img src="image5.jpeg" alt="image">
+        </div>
+        <div class="column_right">
+          <p><span class="text2">"I'm </span> a crazy dreamer and with an insatiable desire for travel and adventure who could never settle for an ordinary life or conform with the norm.
+            many people think that travel is simply too expensive to be a viable lifestyle choice.Of course, to travel long term you would need a small fortune to stay in luxury hotels every night but the reality is that living nomadic lifestyle is much more affordable, and achievable,than you think.
+            Traveling can help you live a life that you’re more passionate about.
+            I want to help give you a push to both the far reaches of the globe as well as your comfort zone. Because it’s there—when you’re the least comfortable—that remarkable transformations start to take shape within.
+            I truly believe that…
+           </p>
+           
+            <a href="about.html" target="_blank"id="btn1">Read more </a>
+        </div>
+      </div>
+          
+    </section>
+    
+    <section id ="grid-container">
+      <!--<div class="image">
+        <img src="C:\Users\91759\OneDrive\Desktop\web development\blog front end UI\img2.jpeg" style="width:90%">
+      </div>
+      <div class="text-subscribe">
+        <h1 class="h-third">Subscribe For More !</h1>
+        
+        <input type="text"placeholder="Name" required><br>
+       
+        <input type="text"placeholder="Email id" required><br>
+        <button type=" button" class="btn-sm">Sign Up</button>
+      </div>-->  
+      <main>
+        <h1>Wanna Join Us?</h1>
+        <h2 style="color: aliceblue;">Log in to your account and connect with EXPLORAS!</h2>
+        <form>
+            <!--<input class="email-login" type="email" placeholder="youremail@address.com">-->
+            <a href="login.html" target="_blank"id="btn-sm">Join Now! <i class="fa-solid fa-arrow-right"></a></i>
+            <!--<button type="submit"name="submit" value="submit"><i class="fa-solid fa-arrow-right"></i></button></a>-->
+
+        </form>
+        <div class="profile-pictures">
+            <img class="profile" src="p1.jpg">
+            <img class="profile" src="p3.jpg">
+            <img class="profile" src="p2.jpg">
+            <img class="profile" src="p4.jpg">
+            <img class="profile" src="p5.jpg">
+        </div>
+    </main>
+    </section>
+    <section id="footer-container">
+        <ul>
+          <h1>CATEGORIES</h1>
+          <li><a href="Destination.html">Destinations</a></li>
+          <li><a href="Travel Tips.html">Travel Tips</a></li>
+          <!--<li><a href="#Guides">Guides</a></li>-->
+          <li><a href="Working Abroad.html">Working Abroad</a></li> 
+          <li><a href="review.html">Write Your Review</a></li>
+        </ul>
+        <ul>
+           <h1>ABOUT</h1>
+           <li><a href="about.html">About</a></li>
+           <!--<li><a href="#Advertise">Advertise</a></li>
+           <li><a href="#Press">Press</a></li>-->
+           <li><a href="FAQ2.html">Contact</a></li>
+           <li><a href="Privacypolicy.html">Private Policy</a></li>
+        </ul> 
+        <ul>
+        <h2 style="color:aliceblue">FOLLOW US ON: </h2>
+        <a href="https://www.facebook.com/mahasweta07" target=_blank class="facebook"><i class="fa-brands fa-facebook"></i></a> 
+        <a href="https://www.instagram.com/___im_mahi__" target=_blank class="instagram"><i class="fa-brands fa-instagram"></i></a> 
+        <a href="https://www.linkedin.com/in/mahasweta-saha-675616222" target=_blank class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.twitter.com/MahaswetaSaha5" target=_blank class="twitter"><i class="fa-brands fa-twitter"></i></a> 
+        <a href="https://www.youtube.com/@MahaswetaSaha" target=_blank><i class="fa-brands fa-youtube"></i></a>
+        </ul>
+    </section>    
+    <footer>
+        <h5 class="text-footer">
+            Copyright &copy; 2023 Explora.com- All rights reserved
+        </h5>
+    </footer>
+</body>    
+</html>

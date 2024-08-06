@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="Destination_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <!--<header id="header">
+    <a href="#" class="logo">Explora</a>
+    <ul>
+        <li><a href="index.html"class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Destination.html">Destination</a></li>
+        <li><a href="Travel Tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About </a></li>  
+        <li><a href="FAQ2.html">FAQ </a></li>
+    </ul>
+</header>-->
+<nav class="navbar">
+  <div class="navbar-container container2">
+      <input type="checkbox" name="" id="">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <h1 class="logo">EXPLORA</h1>
+      <ul class="menu-items">
+        <li><a href="index.html"class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Destination.html">Destination</a></li>
+        <li><a href="Travel Tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About </a></li>  
+        <li><a href="FAQ2.html">FAQ </a></li>
+      </ul>
+      
+  </div>
+</nav>
+<section class="destination_home">
+<img src="destinationbg.jpg" alt="">  
+
+<div class="destination">
+<h2 class="text-center">DESTINATIONS</h2>  
+<p>Our travel guides aim to give you the best and most up-to-date information on the major travel destinations around the world.<br>
+
+    Here you will find budget tips, money-saving advice, and recommendations on places to stay, things to see and do, and where to eat.<br>
+    
+    No matter what type of vacation you are going on — a cruise, backpacking trip, island getaway, two-week holiday, round-the-world trip, or family vacation — these destination guides will give you all the information you need so you can travel better, longer, and cheaper.<br></p>    
+                                                                                                                                   
+
+    <div id="scroll-down-animation">
+
+      <a href="#gallery"><span class="mouse">
+        <span class="move"></span></a>
+      </span>
+      <h2>Scroll down</h2>
+    </div>
+</div>
+</section>
+</section>  
+<section id="gallery"> 
+<h2 class="text-secondary">Gallery</h2>
+<div class="destination_gallery">
+  <div class="container">
+    <img src="Paris.jpg" alt="india" class="image">
+    <div class="overlay">
+        <div class="text">
+          Paris.
+          It’s a city whose story has been told a thousand times over.</div>
+    </div>
+  </div>    
+  <div class="container">    
+    <img src="new york.jpg" alt="india" class="image">
+    <div class="overlay">
+        <div class="text">New York.</div>
+    </div>
+   </div> 
+      
+   <div class="container">    
+    <img src="Iceland.jpg" alt="india" class="image">
+    <div class="overlay">
+        <div class="text">
+          Iceland.Get off the beaten path and away from the crowds.
+        </div>
+    </div>
+   </div>
+  <div class="container">
+    <img src="thailand.jpg" alt="india" class="image">
+    <div class="overlay">
+        <div class="text">It’s filled with incredible things to see and do, delicious food, and friendly locals.</div>
+    </div>
+  </div>    
+  <div class="container">
+    <img src="europe.jpg" alt="india" class="image">
+    <div class="overlay">
+        <div class="text">United in diversity!</div>
+    </div>
+  </div>  
+</div> 
+</section> 
+<section class="map">
+  <div class="column">
+    <div id="column_left">
+      <img class="image1" src="map.jpg" alt="map">
+      <img class="image2" src="puppy.gif" alt="puppy">
+    </div>
+    <div id="column_right">
+      <div class="content">  
+        <img class="image3" src="blogbg2.gif" alt="map">
+        <h1>Don't Know <br><span style="color: green;text-decoration: overline">Where To Go!?</span></h1>
+      </div>  
+        <p> We're Here To Help You Out!<br><span style="font-size: 55px;font-family: 'DM Serif Display', serif;">You're Just One Step Away!</span></p>
+        <a href="map.html" target="_blank" id="btn">Click Here -></a>
+    </div>
+  </div>
+</section>
+
+<!--<section id="list">
+  <h1>CLICK ON THE REGION YOU WANT TO EXPLORE</h1>
+  <ul>
+   <li><a href="#asia">Asia</a></li>
+    <li><a href="#africa">Africa</a></li>
+    <li><a href="#europe">Europe</a></li>
+    <li><a href="#caribbean">Caribbean</a></li>
+  </ul>
+  <ul>  
+    <li><a href="#north america">North America</a></li>
+    <li><a href="#south america">South America</a></li>
+    <li><a href="#oceania">Oceania</a></li>
+    <li><a href="#polar regions">Polar Regions</a></li>
+  </ul>
+</section>
+<hr class="solid">
+<div class="column_left">
+  <div class="content">
+    <img src="north america.jpg" alt="north america">
+  </div>  
+    <ul>  
+      <li><a href="CANADA">CANADA</a></li>
+      <li><a href="MEXICO">MEXICO</a></li>
+      <li><a href="UNITED STATES">UNITED STATES</a></li>
+    </ul>
+</div>  
+
+  <hr class="solid">
+  <div class="column_left">
+  <ul>
+    <li><a href="BOTSWANA">BOTSWANA</a></li>
+    <li><a href="EGYPT">EGYPT</a></li>
+    <li><a href="ETHIOPIA">ETHIOPIA</a></li>
+    <li><a href="KENYA">KENYA</a></li>
+    <li><a href="MOROCCO">MOROCCO</a></li>
+  </ul>
+  <ul>
+    <li><a href="NAMIBIA">NAMIBIA</a></li>
+    <li><a href="SOUTH AFRICA">SOUTH AFRICA</a></li>
+    <li><a href="TANZANIA">TANZANIA</a></li>
+    <li><a href="ZAMBIA">ZAMBIA</a></li>
+  </ul>
+  </div>
+  <hr class="solid">
+  <div class="column_left">
+  <div class="content">
+    <img src="europe1.jpg" alt="europe">
+  </div>
+  </div>
+  <hr class="solid">
+  <div class="column_left">
+  <ul>
+    <li><a href="andorra">ANDORRA</a></li>
+    <li><a href="BELGIUM">BELGIUM</a></li>
+    <li><a href="BULGARIA">BULGARIA</a></li>
+    <li><a href="CZECH REPUBLIC">CZECH REPUBLIC</a></li>
+    <li><a href="DENMARK">DENMARK</a></li>
+    <li><a href="ENGLAND">ENGLAND</a></li>
+    <li><a href="FRANCE">FRANCE</a></li>
+    <li><a href="GERMANY">GERMANY</a></li>
+    <li><a href="GREECE">GREECE</a></li>
+    <li><a href="GREENLAND">GREENLAND</a></li>
+    <li><a href="HUNGARY">HUNGARY</a></li>
+    <li><a href="ICELAND">ICELAND</a></li>
+    <li><a href="IRELAND">IRELAND</a></li>
+  </ul>
+  <ul>  
+    <li><a href="MALTA">MALTA</a></li>
+    <li><a href="NETHERLANDS">NETHERLANDS</a></li>
+    <li><a href="NORTHERN IERLAND">NORTHERN IERLAND</a></li>
+    <li><a href="NORWAY">NORWAY</a></li>
+    <li><a href="POLAND">POLAND</a></li> 
+    <li><a href="PORTUGAL">PORTUGAL</a></li>
+    <li><a href="ROMANIA">ROMANIA</a></li>
+    <li><a href="SLOVENIA">SLOVENIA</a></li>
+    <li><a href="SCOTLAND">SCOTLAND</a></li>
+    <li><a href="SPAIN">SPAIN</a></li>
+    <li><a href="SWEDEN">SWEDEN</a></li>
+    <li><a href="SWITZERLAND">SWITZERLAND</a></li>
+    <li><a href="UKRAINE">UKRAINE</a></li>
+  </ul>
+</div>  
+  <hr class="solid"> 
+<div class="column_left">  
+  <div class="content">
+    <img src="carribean1.jpg" alt="Caribbean">
+  </div>
+</div>   
+  <hr class="solid"> 
+<div class="column_left">
+<ul>
+  <li><a href="BORNEO">BORNEO</a></li>
+  <li><a href="BHUTAN">BHUTAN</a></li>
+  <li><a href="CAMBODIA">CAMBODIA</a></li>
+  <li><a href="CHINA">CHINA</a></li>
+  <li><a href="HONG KONG">HONG KONG</a></li>
+  <li><a href="INDIA">INDIA</a></li>
+  <li><a href="INDONESIA">INDONESIA</a></li>
+  <li><a href="JAPAN">JAPAN</a></li>
+  <li><a href="KAZAKHSTAN">KAZAKHSTAN</a></li>
+  <li><a href="LAOS">LAOS</a></li>
+  <li><a href="MALAYSIA">MALSAYSIA</a></li>
+</ul>
+<ul>  
+  <li><a href="MALDIVES">MALDIVES</a></li>
+  <li><a href="MONGOLIA">MONGOLIA</a></li>
+  <li><a href="MYANMAR">MYANMAR</a></li>
+  <li><a href="NEPAL">NEPAL</a></li>
+  <li><a href="PHILIPPINES">PHILIPPINES</a></li>
+  <li><a href="RUSSIA">RUSSIA</a></li>
+  <li><a href="SINGAPORE">SINGAPORE</a></li>
+  <li><a href="SRI LANKA">SRI LANKA</a></li>
+  <li><a href="THAILAND">THAILAND</a></li>
+  <li><a href="VIETNAM">VIETNAM</a></li>  
+</ul>
+</div>
+<hr class="solid"> 
+<div class="column_left">
+<div class="content">
+    <img src="south america.jpg" alt="Caribbean">
+</div> 
+</div>
+<hr class="solid"> 
+<div class="column_left">
+<ul>
+  <li><a href="AUSTRALIA">AUSTRALIA</a></li>
+  <li><a href="FIJI">FIJI</a></li>
+  <li><a href="NEW ZEALAND">NEW ZEALAND</a></li>  
+</ul>
+</div>
+<hr class="solid">
+<div class="column_left"> 
+<div class="content">
+  <img src="polar.jpg" alt="Caribbean">
+</div>
+</div>
+<hr class="solid"> -->
+<section id="footer-container">
+  <ul>
+    <h1>CATEGORIES</h1>
+    <li><a href="Destinations.html">Destinations</a></li>
+    <li><a href="Travel Tips.html">Travel Tips</a></li>
+    <!--<li><a href="#Guides">Guides</a></li>-->
+    <li><a href="Working Abroad.html">Working Abroad</a></li>
+    
+    <li><a href="review.html">Write Your Review</a></li>
+  </ul>
+  <ul>
+     <h1>ABOUT</h1>
+     <li><a href="about.html">About</a></li>
+     <!--<li><a href="#Advertise">Advertise</a></li>
+     <li><a href="#Press">Press</a></li>-->
+     
+     <li><a href="FAQ2.html">Contact</a></li>
+     <li><a href="privacypolicy.html">Private Policy</a></li>
+  </ul> 
+  <ul>
+  <h2 style="color:aliceblue">FOLLOW US ON: </h2>
+  <a href="https://www.facebook.com/mahasweta07" target=_blank class="facebook"><i class="fa-brands fa-facebook"></i></a> 
+        <a href="https://www.instagram.com/___im_mahi__" target=_blank class="instagram"><i class="fa-brands fa-instagram"></i></a> 
+        <a href="https://www.linkedin.com/in/mahasweta-saha-675616222" target=_blank class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.twitter.com/MahaswetaSaha5" target=_blank class="twitter"><i class="fa-brands fa-twitter"></i></a> 
+        <a href="https://www.youtube.com/@MahaswetaSaha" target=_blank><i class="fa-brands fa-youtube"></i></a>
+  </ul>
+</section>    
+<footer>
+  <h5 class="text-footer">
+      Copyright &copy; 2023 Explora.com- All rights reserved
+  </h5>
+</footer>
+</body>
+</html>
+
+
+<script>
+  $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>

@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /*overflow: hidden;*/
+    background:  url('blogbg1.jpg') no-repeat center/cover;
+    min-height: 100vh;
+}
+/*#header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 21px;
+  /*padding: 30px 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+#header .logo{
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+    text-shadow: 4px 5px 4px black;
+    margin-left: 40px;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #2f9355;
+    font-weight: 900;
+}
+#header ul li a:hover{
+
+    background: #094b65;
+    color:aliceblue;
+   transition-delay: 0.15s;
+}*/
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    
+    text-decoration: none;
+    text-shadow: 4px 5px 4px black;
+    margin-left: -112px;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+  .text-center{
+      font-size: 36px;
+      text-align: center;
+      padding-top: 150px;
+      padding-bottom: 40px;
+      color: white;
+  }
+  .blog_container{
+    background-color: rgb(0,0,0,0.5);
+    padding-bottom: 70px;
+  }
+  .blog{
+    display:flex;
+    padding-left: 119px;
+}
+.blog:after {
+    
+    display: table;
+    clear: both;
+  }
+.blog .box{
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 35px;
+   
+    display: table;
+}
+.blog .box img{
+    border: 2px solid black;
+    width: 85%;
+    cursor: pointer;
+  transition: 0.3s;
+}
+.blog .box img:hover{    
+    border: 2px solid black;
+    box-shadow:2px 4px 4px rgb(92, 86, 86);
+}
+.blog .box p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+  .fa-brands{
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  #footer-container{
+    background: rgb(0, 0, 0);
+    padding: 38px;
+    height: 236px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+   
+  #footer-container ul{
+    display: list-item;
+    padding-top: 30px;
+  }
+  #footer-container ul h1{
+    
+    padding-bottom: 20px;
+    
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+  }
+  #footer-container ul li{
+    list-style: none;
+    
+  }
+  #footer-container ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 32px;
+  }
+  #footer-container ul h2{
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+  }
+  .text-footer{
+    text-align: center;
+    padding: 3px;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
+    background-color: darkslategray;
+  }
+  @media(max-width:1170px){
+    /*#header{
+        padding-top: 18px;
+        padding-left: 17px;
+    }
+    #header ul {
+        display: block;
+        background: rgba(207, 27, 27, 0.5);
+        margin-left: 83px;
+    }
+    #header ul li{
+        margin-bottom: 20px;
+    }
+    #header .logo{
+      font-size: 1.2em;
+      margin-left: 20px;
+      margin-top: -259px;
+    }
+    #header .fa{
+        color: #f1f1f1;
+    }*/
+    .navbar{
+      opacity: 0.95;
+      height: 76px;
+  }
+  .navbar a {
+    color: #000;
+  }
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines{
+      display: block;
+  }
+
+  .navbar-container{
+      display: block;
+      position: relative;
+      height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"]{
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines{
+      display: block;
+      height: 28px;
+      width: 35px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line{
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #6b6b6b;
+      margin-left: -28px;
+  }
+  
+  .navbar-container .hamburger-lines .line1{
+      transform-origin: 0% 0%;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2{
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3{
+      transform-origin: 0% 100%;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items{
+    order: 1;
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 40px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow:  5px 0px 10px 0px #aaa;
+      overflow: scroll;
+  }
+
+  .navbar .menu-items li{
+      margin-bottom: 1.8rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+  }
+
+  .logo{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 2.5rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+      transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+      transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+      transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+      transform: rotate(-45deg);
+  }
+
+}
+
+@media (max-width: 1170px){
+  .navbar-container input[type="checkbox"]:checked ~ .logo{
+      display: none;
+  }
+
+    .blog{
+      display: block;
+      padding-left: 10px;
+    }
+    .blog .box{
+      width: 317px;
+      padding-right: 0px;
+      margin-left: 1px;
+    }
+    .blog .box img {
+      width: 106%;
+    }
+    .btn{
+      margin-left: 114px;
+    }
+    .text-footer {
+    font-size: 10px;
+  }
+  #footer-container{
+    display: inline-table;
+    padding: 18px;
+  }
+  #footer-container ul {
+    font-size: 10px;
+  }
+  #footer-container ul li{
+    text-align: center;
+    margin-left: -57px;
+  }
+  #footer-container ul li a {
+    font-size: 15px;
+    padding-left: 54px;
+
+  }
+  #footer-container ul h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  #footer-container ul h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  #footer-container i.fa-brands {
+    font-size: 20px;
+    margin-left: 12.6px;
+    text-align: center;
+  }
+  } 
